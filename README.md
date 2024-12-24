@@ -1,3 +1,5 @@
+# 一个简易版HTML渲染器
+
 ## 题目信息
 
 #### [题目链接:](https://git.nju.edu.cn/huorunz/browserinterminal)https://git.nju.edu.cn/huorunz/browserinterminal
@@ -9,7 +11,6 @@
 **输入**：输入为一段HTML代码，其中包含p,h,img,div四种元素。
 
 **输出**：一个10 * 50大小的字符渲染结果
-
 
 ## 思路:
 
