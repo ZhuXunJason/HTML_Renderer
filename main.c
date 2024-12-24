@@ -73,6 +73,8 @@ void scan(void);
 
 void deviate(Division *div, int shift); //将div中的所有元素的位置全部偏移shift个单位
 
+void free_pointers(Division *div);
+
 int main(void) {
     for (int i = 0; i < 10; i++)
         for (int j = 0; j < COL; j++)
@@ -94,6 +96,8 @@ int main(void) {
         }
         printf("\n");
     }
+
+    free_pointers(&init);
 }
 
 void scan(void) {
@@ -304,4 +308,18 @@ void deviate(Division *div, int shift) {
         if (i->ele.type == 'd')
             deviate(i->ele.div, shift);
     }
+}
+
+void free_pointers(Division *div) {
+    if (!div || !div->node)return;
+    for (Node *i = div->node->next; i;) {
+        if (i->ele.type == 'd')
+            free_pointers(i->ele.div);
+        Node *tmp = i;
+        i = i->next;
+        free(tmp);
+    }
+    free(div->node);
+    if (div != &init)
+        free(div);
 }
