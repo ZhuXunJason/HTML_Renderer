@@ -123,8 +123,15 @@ void scan(void) {
             char *attr = strtok(input, ">");
             strcpy(ele->str, strtok(NULL, "<")); //strtok函数根据第二个参数分割字符串，第一个参数为NULL时，表示继续分割上一次的字符串
             for (int i = 0; i < 6; i++)
-                if (strstr(attr, ele_style[i]))
+                if (strstr(attr, ele_style[i])) {
                     ele->ele_attr[i] = 1;
+                    if (i == 0)
+                        ele->ele_attr[1] = ele->ele_attr[2] = 0;
+                    if (i == 1)
+                        ele->ele_attr[0] = ele->ele_attr[2] = 0;
+                    if (i == 2)
+                        ele->ele_attr[0] = ele->ele_attr[1] = 0;
+                }
 
             int len = strlen(ele->str);
             //大写标题h
