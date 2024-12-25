@@ -108,6 +108,7 @@ void scan(void) {
         cur_node = new_node; //建立新节点，并将cur_node指向新节点
         Element *ele = &cur_node->ele; //ele储存当前元素
         ele->pos = pos;
+        memcpy(ele->ele_attr, cur_div->FatherEle.ele_attr, sizeof(int) * 6);
 
         //p或h
         if (strstr(input, "<p") || strstr(input, "<h")) {
