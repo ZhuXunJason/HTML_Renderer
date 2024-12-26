@@ -1,87 +1,84 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <!-- Styles -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
-    </marker>
-  </defs>
+    <!-- Styles -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+        </marker>
+    </defs>
 
-  <!-- Division Label -->
-  <text x="85" y="140" font-family="Times New Roman" text-anchor="middle">Division</text>
+    <!-- Division Label -->
+    <text x="85" y="140" font-family="Times New Roman" text-anchor="middle">Division</text>
 
-  <!-- Left div-attr structure (x div) -->
-  <rect x="40" y="150" width="90" height="100" fill="none" stroke="black"/>
-  <text x="85" y="170" font-family="Times New Roman" text-anchor="middle">div_attr</text>
-  <line x1="40" y1="175" x2="130" y2="175" stroke="black"/>
-  <text x="85" y="190" font-family="Times New Roman" text-anchor="middle">*w</text>
-  <text x="85" y="210" font-family="Times New Roman" text-anchor="middle">*h</text>
-  <text x="85" y="220" font-family="Times New Roman" text-anchor="middle">...</text>
-  <text x="85" y="240" font-family="Times New Roman" text-anchor="middle">*node</text>
-  <text x="85" y="270" font-family="Times New Roman" text-anchor="middle">Father_div</text>
+    <!-- Left div-attr structure (x div) -->
+    <rect x="40" y="150" width="90" height="100" fill="none" stroke="black"/>
+    <text x="85" y="170" font-family="Times New Roman" text-anchor="middle">div_attr</text>
+    <text x="85" y="190" font-family="Times New Roman" text-anchor="middle">*w</text>
+    <text x="85" y="210" font-family="Times New Roman" text-anchor="middle">*h</text>
+    <text x="85" y="220" font-family="Times New Roman" text-anchor="middle">...</text>
+    <text x="85" y="240" font-family="Times New Roman" text-anchor="middle">*node</text>
+    <text x="85" y="270" font-family="Times New Roman" text-anchor="middle">Father_div</text>
 
-  <text x="245" y="40" font-family="Times New Roman" text-anchor="middle">Node</text>
-  <!-- Central chain of ele_attr structures -->
-  <rect x="200" y="50" width="90" height="100" fill="none" stroke="black"/>
-  <text x="245" y="70" font-family="Times New Roman" text-anchor="middle">ele_attr</text>
-  <text x="245" y="90" font-family="Times New Roman" text-anchor="middle">type</text>
-  <text x="245" y="110" font-family="Times New Roman" text-anchor="middle">*div=NULL</text>
-  <text x="245" y="125" font-family="Times New Roman" text-anchor="middle">...</text>
-  <line x1="200" y1="135" x2="290" y2="135" stroke="black"/>
-  <text x="245" y="147" font-family="Times New Roman" text-anchor="middle">*next</text>
+    <text x="245" y="40" font-family="Times New Roman" text-anchor="middle">Node</text>
+    <!-- Central chain of ele_attr structures -->
+    <rect x="200" y="50" width="90" height="100" fill="none" stroke="black"/>
+    <text x="245" y="70" font-family="Times New Roman" text-anchor="middle">ele_attr</text>
+    <text x="245" y="90" font-family="Times New Roman" text-anchor="middle">type</text>
+    <text x="245" y="110" font-family="Times New Roman" text-anchor="middle">*div=NULL</text>
+    <text x="245" y="120" font-family="Times New Roman" text-anchor="middle">...</text>
+    <line x1="200" y1="130" x2="290" y2="130" stroke="black"/>
+    <text x="245" y="145" font-family="Times New Roman" text-anchor="middle">*next</text>
 
-  <line x1="245" y1="150" x2="245" y2="180" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="245" y1="150" x2="245" y2="180" stroke="black" marker-end="url(#arrowhead)"/>
 
-  <rect x="200" y="180" width="90" height="100" fill="none" stroke="black"/>
-  <text x="245" y="200" font-family="Times New Roman" text-anchor="middle">ele_attr</text>
-  <text x="245" y="220" font-family="Times New Roman" text-anchor="middle">type='d'</text>
-  <text x="245" y="240" font-family="Times New Roman" text-anchor="middle">*div</text>
-  <text x="245" y="250" font-family="Times New Roman" text-anchor="middle">...</text>
-  <line x1="200" y1="260" x2="290" y2="260" stroke="black"/>
-  <text x="245" y="275" font-family="Times New Roman" text-anchor="middle">*next</text>
+    <rect x="200" y="180" width="90" height="100" fill="none" stroke="black"/>
+    <text x="245" y="200" font-family="Times New Roman" text-anchor="middle">ele_attr</text>
+    <text x="245" y="220" font-family="Times New Roman" text-anchor="middle">type='d'</text>
+    <text x="245" y="240" font-family="Times New Roman" text-anchor="middle">*div</text>
+    <text x="245" y="250" font-family="Times New Roman" text-anchor="middle">...</text>
+    <line x1="200" y1="260" x2="290" y2="260" stroke="black"/>
+    <text x="245" y="275" font-family="Times New Roman" text-anchor="middle">*next</text>
 
-  <line x1="245" y1="280" x2="245" y2="310" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="245" y1="280" x2="245" y2="310" stroke="black" marker-end="url(#arrowhead)"/>
 
-  <rect x="200" y="310" width="90" height="100" fill="none" stroke="black"/>
-  <text x="245" y="330" font-family="Times New Roman" text-anchor="middle">ele_attr</text>
-  <text x="245" y="350" font-family="Times New Roman" text-anchor="middle">type='d'</text>
-  <text x="245" y="370" font-family="Times New Roman" text-anchor="middle">*div</text>
-  <text x="245" y="380" font-family="Times New Roman" text-anchor="middle">...</text>
-  <line x1="200" y1="390" x2="290" y2="390" stroke="black"/>
-  <text x="245" y="405" font-family="Times New Roman" text-anchor="middle">*next</text>
+    <rect x="200" y="310" width="90" height="100" fill="none" stroke="black"/>
+    <text x="245" y="330" font-family="Times New Roman" text-anchor="middle">ele_attr</text>
+    <text x="245" y="350" font-family="Times New Roman" text-anchor="middle">type='d'</text>
+    <text x="245" y="370" font-family="Times New Roman" text-anchor="middle">*div</text>
+    <text x="245" y="380" font-family="Times New Roman" text-anchor="middle">...</text>
+    <line x1="200" y1="390" x2="290" y2="390" stroke="black"/>
+    <text x="245" y="405" font-family="Times New Roman" text-anchor="middle">*next</text>
 
-  <line x1="245" y1="410" x2="245" y2="440" stroke="black" marker-end="url(#arrowhead)"/>
-  <text x="245" y="445" font-family="Times New Roman" text-anchor="middle">...</text>
-  <!-- Right div-attr structures -->
-  <rect x="360" y="180" width="80" height="100" fill="none" stroke="black"/>
-  <text x="400" y="200" font-family="Times New Roman" text-anchor="middle">div-attr</text>
-  <line x1="360" y1="205" x2="440" y2="205" stroke="black"/>
-  <text x="400" y="220" font-family="Times New Roman" text-anchor="middle">*w</text>
-  <text x="400" y="240" font-family="Times New Roman" text-anchor="middle">*h</text>
-  <text x="400" y="260" font-family="Times New Roman" text-anchor="middle">...</text>
-  <text x="400" y="270" font-family="Times New Roman" text-anchor="middle">*node</text>
-  <text x="400" y="295" font-family="Times New Roman" text-anchor="middle">Son_div1</text>
+    <line x1="245" y1="410" x2="245" y2="440" stroke="black" marker-end="url(#arrowhead)"/>
+    <text x="245" y="445" font-family="Times New Roman" text-anchor="middle">...</text>
+    <!-- Right div-attr structures -->
+    <rect x="360" y="180" width="80" height="100" fill="none" stroke="black"/>
+    <text x="400" y="200" font-family="Times New Roman" text-anchor="middle">div-attr</text>
+    <text x="400" y="220" font-family="Times New Roman" text-anchor="middle">*w</text>
+    <text x="400" y="240" font-family="Times New Roman" text-anchor="middle">*h</text>
+    <text x="400" y="255" font-family="Times New Roman" text-anchor="middle">...</text>
+    <text x="400" y="270" font-family="Times New Roman" text-anchor="middle">*node</text>
+    <text x="400" y="295" font-family="Times New Roman" text-anchor="middle">Son_div1</text>
 
-  <!-- Connecting arrows -->
-  <line x1="260" y1="235" x2="360" y2="235" stroke="black" marker-end="url(#arrowhead)"/>
-  <line x1="260" y1="365" x2="360" y2="365" stroke="black" marker-end="url(#arrowhead)"/>
-  <line x1="440" y1="230" x2="470" y2="230" stroke="black" marker-end="url(#arrowhead)"/>
-  <text x="475" y="235" font-family="Times New Roman" text-anchor="middle">...</text>
+    <!-- Connecting arrows -->
+    <line x1="260" y1="235" x2="360" y2="235" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="260" y1="365" x2="360" y2="365" stroke="black" marker-end="url(#arrowhead)"/>
+    <line x1="440" y1="235" x2="470" y2="235" stroke="black" marker-end="url(#arrowhead)"/>
+    <text x="475" y="240" font-family="Times New Roman" text-anchor="middle">...</text>
 
 
-  <!-- Additional div-attr structure -->
-  <rect x="360" y="310" width="80" height="100" fill="none" stroke="black"/>
-  <text x="400" y="330" font-family="Times New Roman" text-anchor="middle">div-attr</text>
-  <line x1="360" y1="335" x2="440" y2="335" stroke="black"/>
-  <text x="400" y="350" font-family="Times New Roman" text-anchor="middle">*w</text>
-  <text x="400" y="370" font-family="Times New Roman" text-anchor="middle">*h</text>
-  <text x="400" y="390" font-family="Times New Roman" text-anchor="middle">...</text>
-  <text x="400" y="400" font-family="Times New Roman" text-anchor="middle">*node</text>
-  <text x="400" y="425" font-family="Times New Roman" text-anchor="middle">Son_div2</text>
+    <!-- Additional div-attr structure -->
+    <rect x="360" y="310" width="80" height="100" fill="none" stroke="black"/>
+    <text x="400" y="330" font-family="Times New Roman" text-anchor="middle">div-attr</text>
+    <text x="400" y="350" font-family="Times New Roman" text-anchor="middle">*w</text>
+    <text x="400" y="370" font-family="Times New Roman" text-anchor="middle">*h</text>
+    <text x="400" y="385" font-family="Times New Roman" text-anchor="middle">...</text>
+    <text x="400" y="400" font-family="Times New Roman" text-anchor="middle">*node</text>
+    <text x="400" y="425" font-family="Times New Roman" text-anchor="middle">Son_div2</text>
 
-  <!-- Final connecting arrow -->
-  <line x1="440" y1="360" x2="470" y2="360" stroke="black" marker-end="url(#arrowhead)"/>
-  <text x="475" y="365" font-family="Times New Roman" text-anchor="middle">...</text>
+    <!-- Final connecting arrow -->
+    <line x1="440" y1="365" x2="470" y2="365" stroke="black" marker-end="url(#arrowhead)"/>
+    <text x="475" y="370" font-family="Times New Roman" text-anchor="middle">...</text>
 
-  <!-- Polyline from Left div_attr structure's *node to Central chain of ele_attr structures' first rect -->
-  <polyline points="105,237 150,237 150,100 200,100" fill="none" stroke="black" marker-end="url(#arrowhead)"/>
+    <!-- Polyline from Left div_attr structure's *node to Central chain of ele_attr structures' first rect -->
+    <polyline points="105,237 150,237 150,100 200,100" fill="none" stroke="black" marker-end="url(#arrowhead)"/>
 </svg>
